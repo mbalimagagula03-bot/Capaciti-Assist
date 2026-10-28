@@ -21,7 +21,7 @@ services:
       SECRET_KEY: ${SECRET_KEY:-CHANGE_ME_FOR_LOCAL_DEMO_ONLY}
       DEMO_MODE: ${DEMO_MODE:-true}
       GEMINI_API_KEY: ${GEMINI_API_KEY}
-      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
     depends_on:
       db: {condition: service_healthy}
     ports: ["8000:8000"]
